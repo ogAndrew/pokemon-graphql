@@ -14,7 +14,7 @@ export function Pokemon({ pokemon }) {
                 <img src={pokemon.image} alt={pokemon.name} />
             </div>
             <div className="pokemon__attacks">
-            
+    <span key={`${attack.name}-${attack.damage}`}>{attack.name}</span>
             </div>
         </div>
     )
